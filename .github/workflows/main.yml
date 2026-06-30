@@ -3,10 +3,10 @@ name: Social Media Bot
 on:
   schedule:
     - cron: "0 */2 * * *" # Startet automatisch alle 2 Stunden
-  workflow_dispatch: # Erlaubt dir, den Bot manuell zu testen
+  workflow_dispatch: # Erlaubt dir, den Bot jederzeit manuell per Klick zu starten
 
 permissions:
-  contents: write
+  contents: write # Erlaubt dem Bot, die 'gepostet.txt' zu aktualisieren
 
 jobs:
   post-news:
